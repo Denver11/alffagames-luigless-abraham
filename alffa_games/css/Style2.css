@@ -1,0 +1,329 @@
+:root {
+    --blanco: #fff;
+    --Fondo: #141414;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(14, 17, 40);
+    color: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.Contenedor {
+    width: 78%;
+    margin: auto;
+}
+
+header {
+    padding: 15px 0;
+}
+
+header .Contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .nom_Logo {
+    font-family: 'Metal Mania', cursive;
+    font-weight: normal;
+    color: var(--blanco);
+    font-size: 40px;
+}
+
+.Logo {
+    width: 50px;
+    position: relative;
+}
+
+header nav a {
+    color: #aaa;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+    color: white;
+}
+
+
+/*imagen principal*/
+
+.Imagen-Principal {
+    font-size: 16px;
+    min-height: 34.43em;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, .50)0%, rgba(0, 0, 0, .5)100%), url(../img/Jordan.jpg);
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: end;
+}
+
+.Imagen-Principal .Contenedor {
+    margin: 0 auto;
+    margin: 6.25em;
+}
+
+.Imagen-Principal .Bienvenida {
+    font-weight: 600;
+    font-size: 3.12em;
+    margin-bottom: 0.4em;
+    max-width: 60%;
+}
+
+.Imagen-Principal .Descripcion {
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 40%;
+    margin-bottom: 1.25em;
+}
+
+.Imagen-Principal .Boton {
+    background: rgba(0, 0, 0, .5);
+    border: none;
+    border-radius: 9.31em;
+    padding: 0.93em 1.87em;
+    color: white;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+}
+
+.Imagen-Principal .Boton:hover {
+    background: white;
+    color: black;
+}
+
+.Imagen-Principal .Boton i {
+    margin-right: 1.25em;
+}
+
+
+/*Contenedor de Titulo*/
+
+.Contedor-Combo-Controles {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.Contedor-Combo-Controles h3 {
+    color: white;
+    font-size: 30px;
+}
+
+.Contedor-Combo-Controles .Indicadores button {
+    background: white;
+    height: 10px;
+    width: 10px;
+    cursor: pointer;
+    border: none;
+    margin-right: 2px;
+}
+
+.Contedor-Combo-Controles .indicadores button:hover,
+.Contedor-Combo-Controles .indicadores button.activo {
+    background: red;
+}
+
+
+/*Contenedor principal y flechas*/
+
+.Combos {
+    margin-bottom: 70px;
+}
+
+.Combos .Contenedor-Prin {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.Combos .Contenedor-Prin .Flech-Izq,
+.Combos .Contenedor-Prin .Flech-Derch {
+    position: absolute;
+    border: none;
+    background: rgba(0, 0, 0, .3);
+    font-size: 40px;
+    height: 20%;
+    top: calc(50% - 10%);
+    line-height: 40px;
+    width: 50px;
+    color: white;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;
+}
+
+.Combos .Contenedor-Prin .Flech-Izq:hover,
+.Combos .Contenedor-Prin .Flech-Derch:hover {
+    background: rgba(0, 0, 0, .9);
+}
+
+.Combos .Contenedor-Prin .Flech-Izq {
+    left: 0;
+}
+
+.Combos .Contenedor-Prin .Flech-Derch {
+    right: 0;
+}
+
+
+/*Carousel*/
+
+.Combos .Cont-Carousel {
+    width: 100%;
+    padding: 20px 0px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.Combos .Cont-Carousel .Carousel {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.Combos .Cont-Carousel .Carousel .ComboBM {
+    min-width: 16.66%;
+    transition: .3s ease all;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+}
+
+.Combos .Cont-Carousel .Carousel .ComboBM.hover {
+    transform: scale(1.2);
+    transform-origin: center;
+}
+
+.Combos .Cont-Carousel .Carousel .ComboBM img {
+    width: 100%;
+    vertical-align: top;
+}
+
+
+/*Mensaje*/
+
+#footer {
+    background-color: rgba(0, 0, 0, .5);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5em;
+}
+
+#footer ul {
+    list-style: none;
+    list-style-position: initial;
+    list-style-image: initial;
+    list-style-type: none;
+    margin: 0;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding: 0;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+#footer ul li {
+    display: inline-block;
+    border-right: 2px solid #fff;
+    border-right-width: 2px;
+    border-right-style: solid;
+    border-right-color: rgb(255, 255, 255);
+    padding-right: 1.5em;
+    margin-right: 1.5em;
+}
+
+#footer ul li a {
+    color: #fff;
+    font-size: 0.9em;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#footer p {
+    color: #fff;
+    margin: 0;
+    margin-top: 0 px;
+    margin-right: 0 px;
+    margin-bottom: 0 px;
+    margin-left: 0 px;
+}
+
+
+/*Media Queries*/
+
+@media screen and (max-width: 800px) {
+    header .Logo {
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    header .Contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+    .Contenedor-Prin {
+        font-size: 14px;
+    }
+    .Contenedor-Prin .Descripcion {
+        max-width: 100%;
+    }
+    .Combos .Cont-Carousel {
+        overflow: visible;
+    }
+    .Combos .Cont-Carousel .Carousel {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .Combos .Indicadores,
+    .Combos .Flech-Izq,
+    .Combos .Flech-Derch {
+        display: none;
+    }
+}
+
+
+/*WhatsApp*/
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.float:hover {
+    text-decoration: none;
+    color: #25d366;
+    background-color: #fff;
+}
+
+.my-float {
+    margin-top: 16px;
+}
